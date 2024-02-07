@@ -6,6 +6,7 @@ const student = require("./class_export_while_defining");
 let StudentDetails = require("./class_export_while_defining");
 let Car = require("./class_export_after_defining");
 const {name, sirname} = require("./named_export_multi_var");
+const {mult, div} =require("./name_export_function");
 
 console.log("variable : " ,variable);
 console.log("Expression : ", expression);
@@ -19,3 +20,5 @@ Car = new Car("Audi", 10000000);
 console.log(Car);
 
 console.log(name, sirname);
+console.log(mult(10, 20));
+console.log(div(10,20));
